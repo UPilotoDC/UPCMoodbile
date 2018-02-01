@@ -1,5 +1,5 @@
 {
-    "app_id" : "edu.unipiloto.virtual",
+    "app_id" : "co.edu.unipiloto.virtual",
     "appname": "Unipiloto virtual 3.0",
     "desktopappname": "Moodle Desktop",
     "versioncode" : "2021",
@@ -11,6 +11,7 @@
     "wsextservice" : "local_mobile",
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
+    "presets": {"url": "https://virtual.unipioto.edu.co", "username": ""},
     "siteurl": "https://virtual.unipioto.edu.co",
     "multisitesdisplay": "select",
     "skipssoconfirmation": "false",
