@@ -71104,7 +71104,6 @@ angular.module('mm.core')
     "wsextservice" : "local_mobile",
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-	"presets": {"url": "https://virtual.unipioto.edu.co"},
     "siteurl": "https://virtual.unipioto.edu.co",
     "multisitesdisplay": "select",
     "skipssoconfirmation": "false",
