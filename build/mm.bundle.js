@@ -7249,14 +7249,15 @@ angular.module('mm.core')
             return countries;
         };
         self.getDocsUrl = function(release, page) {
-            page = page || 'Mobile_app';
-            var docsurl = 'https://docs.moodle.org/en/' + page;
-            if (typeof release != 'undefined') {
+            var docsurl = 'http://campusvirtual.unipiloto.edu.co/enviar-ticket';
+            page = page || 'enviar-ticket';
+            var docsurl = 'http://campusvirtual.unipiloto.edu.co/' + page;
+            /*if (typeof release != 'undefined') {
                 var version = release.substr(0, 3).replace(".", "");
                 if (parseInt(version) >= 24) {
                     docsurl = docsurl.replace('https://docs.moodle.org/', 'https://docs.moodle.org/' + version + '/');
                 }
-            }
+            }*/
             return $mmLang.getCurrentLanguage().then(function(lang) {
                 return docsurl.replace('/en/', '/' + lang + '/');
             }, function() {
@@ -30754,7 +30755,7 @@ angular.module('mm.addons.frontpage')
         self.getController = function() {
             return function($scope) {
                 $scope.icon = 'ion-home';
-                $scope.title = 'mma.frontpage.sitehome';
+                $scope.title = 'mma.frontpage.upchome';
                 $scope.state = 'site.frontpage';
                 $scope.class = 'mma-frontpage-handler';
             };
