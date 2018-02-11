@@ -4020,7 +4020,7 @@ a.subdued {
     font-weight: 500;
     line-height: 44px; }
     .bar .title.title-left {
-      text-align: left; }
+      text-align: center; }
     .bar .title.title-right {
       text-align: right; }
   .bar .title a {
@@ -10421,7 +10421,7 @@ a.button {
 .platform-android .action-sheet .button .icon {
   color: inherit; }
 
-.bar-content .icon, .bar-side-menu .icon {
+.icon, .bar-side-menu .icon {
   color: #ffffff; }
 
 .item-delete .button.icon,
@@ -10595,7 +10595,7 @@ a.button {
 
 .bar-content {
   border-color: transparent;
-  background-color: #000000;
+  background-color: #040404;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #ffffff; }
   .bar-content .title {
