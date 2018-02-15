@@ -15,6 +15,6 @@
     "siteurl": "https://virtual.unipiloto.edu.co",
     "multisitesdisplay": "select",
     "skipssoconfirmation": "false",
-    "forcedefaultlanguage": "false",
-    "privacypolicy": "https://goo.gl/3ZfhCC"
+    "forcedefaultlanguage": "true",
+    "privacypolicy": "http://www.unipiloto.edu.co/descargas/Politica-Tratamiento-de-Datos-Personales.pdf"
 }
