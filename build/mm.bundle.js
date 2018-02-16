@@ -4316,7 +4316,7 @@ angular.module('mm.core')
 }]);
 
 angular.module('mm.core')
-.constant('mmCoreLogEnabledDefault', false)
+.constant('mmCoreLogEnabledDefault', true) 
 .constant('mmCoreLogEnabledConfigName', 'debug_enabled')
 .provider('$mmLog', ["mmCoreLogEnabledDefault", function(mmCoreLogEnabledDefault) {
     var isEnabled = mmCoreLogEnabledDefault,
@@ -7249,14 +7249,15 @@ angular.module('mm.core')
             return countries;
         };
         self.getDocsUrl = function(release, page) {
-            page = page || 'Mobile_app';
-            var docsurl = 'https://docs.moodle.org/en/' + page;
-            if (typeof release != 'undefined') {
+            var docsurl = 'http://campusvirtual.unipiloto.edu.co/enviar-ticket';
+            page = page || 'enviar-ticket';
+            var docsurl = 'http://campusvirtual.unipiloto.edu.co/' + page;
+            /*if (typeof release != 'undefined') {
                 var version = release.substr(0, 3).replace(".", "");
                 if (parseInt(version) >= 24) {
                     docsurl = docsurl.replace('https://docs.moodle.org/', 'https://docs.moodle.org/' + version + '/');
                 }
-            }
+            }*/
             return $mmLang.getCurrentLanguage().then(function(lang) {
                 return docsurl.replace('/en/', '/' + lang + '/');
             }, function() {
@@ -30754,7 +30755,7 @@ angular.module('mm.addons.frontpage')
         self.getController = function() {
             return function($scope) {
                 $scope.icon = 'ion-home';
-                $scope.title = 'mma.frontpage.sitehome';
+                $scope.title = 'mma.frontpage.upchome';
                 $scope.state = 'site.frontpage';
                 $scope.class = 'mma-frontpage-handler';
             };
@@ -71092,23 +71093,23 @@ angular.module('mm.addons.mod_workshop')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
-    "desktopappname": "Moodle Desktop",
+    "app_id" : "co.edu.unipiloto.virtual",
+    "appname": "UniPiloto virtual 3.0",
+    "desktopappname": "UniPiloto Desktop Virtual",
     "versioncode" : "2021",
     "versionname" : "3.4.0",
     "cache_expiration_time" : 300000,
-    "default_lang" : "en",
+    "default_lang" : "es",
     "languages": {"ar": "عربي", "bg": "Български", "ca": "Català", "cs": "Čeština", "da": "Dansk", "de": "Deutsch", "de-du": "Deutsch - Du", "el": "Ελληνικά", "en": "English", "es": "Español", "es-mx": "Español - México", "eu": "Euskara", "fa": "فارسی", "fi": "Suomi", "fr" : "Français", "he" : "עברית", "hu": "magyar", "it": "Italiano", "ja": "日本語", "lt" : "Lietuvių", "mr": "मराठी", "nl": "Nederlands", "pl": "Polski", "pt-br": "Português - Brasil", "pt": "Português - Portugal", "ro": "Română", "ru": "Русский", "sr-cr": "Српски", "sr-lt": "Srpski", "sv": "Svenska", "tr" : "Türkçe", "uk" : "Українська", "zh-cn" : "简体中文", "zh-tw" : "正體中文"},
     "wsservice" : "moodle_mobile_app",
     "wsextservice" : "local_mobile",
-    "demo_sites": {"student": {"url": "https://school.demo.moodle.net", "username": "student", "password": "moodle"}, "teacher": {"url": "https://school.demo.moodle.net", "username": "teacher", "password": "moodle"}},
     "gcmpn": "694767596569",
     "customurlscheme": "moodlemobile",
-    "siteurl": "",
+    "presets" : {"url": "https://virtual.unipiloto.edu.co", "username": ""},
+    "siteurl": "https://virtual.unipiloto.edu.co",
     "multisitesdisplay": "select",
     "skipssoconfirmation": "false",
-    "forcedefaultlanguage": "false",
-    "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
+    "forcedefaultlanguage": "true",
+    "privacypolicy": "http://www.unipiloto.edu.co/descargas/Politica-Tratamiento-de-Datos-Personales.pdf"
 }
 );
