@@ -10595,7 +10595,7 @@ a.button {
 
 .bar-content {
   border-color: transparent;
-  background-color: #777777;
+  background-color: #181818;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #ffffff; }
   .bar-content .title {
@@ -10609,7 +10609,7 @@ a.button {
       text-decoration: none; }
     .bar-content .button.active, .bar-content .button.activated {
       border-color: transparent;
-      background-color: #444444; }
+      background-color: #181818; }
     .bar-content .button.button-clear {
       border-color: transparent;
       background: none;
@@ -13237,7 +13237,7 @@ li.mm-question-answer-incorrect,
 
 .bar-side-menu {
   border-color: transparent;
-  background-color: #444444;
+  background-color: #141414;
   background-image: linear-gradient(0deg, transparent, transparent 50%, transparent 50%);
   color: #ffffff;
   height: 80px !important; }
