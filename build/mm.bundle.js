@@ -71094,8 +71094,8 @@ angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
     "app_id" : "co.edu.unipiloto.virtual",
-    "appname": "Unipiloto virtual 3.0",
-    "desktopappname": "Moodle Desktop",
+    "appname": "UniPiloto virtual 3.0",
+    "desktopappname": "UniPiloto Desktop Virtual",
     "versioncode" : "2021",
     "versionname" : "3.4.0",
     "cache_expiration_time" : 300000,
@@ -71109,7 +71109,7 @@ angular.module('mm.core')
     "siteurl": "https://virtual.unipiloto.edu.co",
     "multisitesdisplay": "select",
     "skipssoconfirmation": "false",
-    "forcedefaultlanguage": "false",
-    "privacypolicy": "https://moodle.org/mod/page/view.php?id=8148"
+    "forcedefaultlanguage": "true",
+    "privacypolicy": "http://www.unipiloto.edu.co/descargas/Politica-Tratamiento-de-Datos-Personales.pdf"
 }
 );
