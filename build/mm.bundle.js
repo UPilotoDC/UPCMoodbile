@@ -71093,7 +71093,7 @@ angular.module('mm.addons.mod_workshop')
 angular.module('mm.core')
 
 .constant('mmCoreConfigConstants', {
-    "app_id" : "co.edu.unipiloto.virtual",
+    "app_id" : "net.virtualupc20.mimoodle",
     "appname": "UniPiloto virtual 3.0",
     "desktopappname": "UniPiloto Desktop Virtual",
     "versioncode" : "2021",
